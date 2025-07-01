@@ -44,7 +44,7 @@
                           </Group>
                           <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
                       </Group>
-                      <Component id="tf_NIP1" alignment="0" pref="221" max="32767" attributes="0"/>
+                      <Component id="tf_NIP" alignment="0" pref="221" max="32767" attributes="0"/>
                   </Group>
                   <EmptySpace max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" max="-2" attributes="0">
@@ -72,7 +72,7 @@
                       <Group type="102" attributes="0">
                           <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                          <Component id="tf_NIP1" min="-2" pref="30" max="-2" attributes="0"/>
+                          <Component id="tf_NIP" min="-2" pref="30" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                           <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
@@ -260,6 +260,9 @@
                   </Table>
                 </Property>
               </Properties>
+              <Events>
+                <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="tb_guruMouseClicked"/>
+              </Events>
             </Component>
           </SubComponents>
         </Container>
@@ -272,7 +275,7 @@
           <Properties>
             <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
               <StringArray count="2">
-                <StringItem index="0" value="Laki-Laki"/>
+                <StringItem index="0" value="Laki-laki"/>
                 <StringItem index="1" value="Perempuan"/>
               </StringArray>
             </Property>
@@ -289,9 +292,9 @@
             <Property name="text" type="java.lang.String" value="Alamat"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="tf_NIP1">
+        <Component class="javax.swing.JTextField" name="tf_NIP">
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tf_NIP1ActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="tf_NIPActionPerformed"/>
           </Events>
         </Component>
       </SubComponents>

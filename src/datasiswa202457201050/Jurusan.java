@@ -19,6 +19,9 @@ public class Jurusan extends javax.swing.JPanel {
      */
     public Jurusan() {
         initComponents();
+        reset();
+        tampil_tb_jurusan();
+        
     }
 
     void tampil_tb_jurusan() {
@@ -36,7 +39,7 @@ public class Jurusan extends javax.swing.JPanel {
             }
             tb_jurusan.setModel(model);
         } catch (Exception e) {
-            e.printStackTrace();
+            JOptionPane.showInternalMessageDialog(null,"Gagal mengambil data");
         }
     }
 
